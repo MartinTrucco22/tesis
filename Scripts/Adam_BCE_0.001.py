@@ -100,7 +100,7 @@ for i in range(1, long_camadas):
 joblib.dump(modelo_base, 'LSTM_Final.joblib')
 
 
-# Métricas y demás
+# Métricas
 
 fpr, tpr, thresholds = roc_curve(y_test, y_prob)
 auc = roc_auc_score(y_test, y_prob)
