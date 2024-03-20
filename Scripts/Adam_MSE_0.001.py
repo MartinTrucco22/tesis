@@ -73,7 +73,7 @@ for i in range(1, long_camadas):
         model.set_weights(modelo_base.get_weights())
     
     ##########################################
-    # Acá intenté hacer la búsqueda de hiperparámetros y para la primera iteración anda bien pero después me tira error cuando guardo el modelo asique ni idea
+    # Acá intenté hacer la búsqueda de hiperparámetros. Para la primera iteración anda bien pero cuando quiere guardo/cargo el modelo siguiente da error y no pude solucionarlo
         
     # random_search = RandomizedSearchCV(modelo, param_distributions=param_dist, n_iter=5, cv=5, random_state=42)
     # random_search.fit(X_train, y_train)
