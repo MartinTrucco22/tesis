@@ -79,7 +79,7 @@ for i in range(1, long_camadas):
 joblib.dump(modelo_base, 'RanFor_Final.joblib')
 
 
-# Métricas y demás
+# Métricas
 
 mse = mean_squared_error(y_test, y_prob)
 # bce = log_loss(y_test, y_prob)
