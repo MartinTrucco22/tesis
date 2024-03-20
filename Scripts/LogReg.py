@@ -52,7 +52,7 @@ for i in range(1, long_camadas):
 
     param_dist = {
     'max_iter': [10000, 100000],
-    'solver': ['liblinear', 'newton-cg'],                                                       # 'lbfgs' hace renegar para converger 
+    'solver': ['liblinear', 'newton-cg'],                                                       # 'lbfgs' no converge
     'penalty': ['l2'],
     'C': [100, 10, 1.0, 0.1, 0.01]
     }
@@ -79,7 +79,7 @@ for i in range(1, long_camadas):
 joblib.dump(modelo_base, 'LogReg_Final.joblib')
 
 
-# Métricas y demás
+# Métricas
 
 mse = mean_squared_error(y_test, y_prob)
 # bce = log_loss(y_test, y_prob)
